@@ -64,20 +64,23 @@ This project is a scalable, cloud-native API designed to perform real-time senti
   "sentiment": "Positive",
   "confidence": [0.98, 0.01, 0.01]
 }
----
+```
 
-## ☁️ Deployment
+### ☁️ Deployment
 This repository is configured for **GitHub Actions**. Any push to the `main` branch automatically triggers the following pipeline:
-*   **Build:** Compiles the solution in a native **.NET 10** environment.
-*   **Validation:** Verifies all deep learning dependencies (**TorchSharp**, **ML.NET**).
-*   **Release:** Deploys the finalized artifact to the **Azure Function App** service.
+
+* **Build:** Compiles the solution in a native **.NET 10** environment.
+* **Validation:** Verifies all deep learning dependencies (**TorchSharp**, **ML.NET**).
+* **Release:** Deploys the finalized artifact to the **Azure Function App** service.
 
 ---
 
-## 🛡️ Maintainability & Monitoring
-*   **Logging:** Integrated with **Azure Application Insights** for full-stack telemetry and real-time error tracking.
-*   **Resiliency:** Designed using **Dependency Injection** and `PredictionEnginePool` to manage the model's memory footprint and ensure thread-safety.
-*   **Scalability:** Fully optimized for **Azure Functions Premium Plans** to eliminate "cold starts" and handle high-volume traffic bursts.
+### 🛡️ Maintainability & Monitoring
+* **Logging:** Integrated with **Azure Application Insights** for full-stack telemetry and real-time error tracking.
+* **Resiliency:** Designed using **Dependency Injection** and `PredictionEnginePool` to manage the model's memory footprint and ensure thread-safety.
+* **Scalability:** Fully optimized for **Azure Functions Premium Plans** to eliminate cold starts.
 
 ---
+
 *Developed as part of a Cloud-Native Microservices engineering exercise.*
+
