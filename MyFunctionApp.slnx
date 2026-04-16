@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../MyMLApp/MyMLApp/MyMLApp.csproj" />
+  <Project Path="MyFunctionApp/MyFunctionApp.csproj" />
+</Solution>
